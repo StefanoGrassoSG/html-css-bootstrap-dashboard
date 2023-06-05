@@ -23,10 +23,10 @@
                     </div>
 
                     <div class="col p-0">
-                        <nav class="navbar bg-body-tertiary  py-0">
+                        <nav class="navbar bg-white  py-0">
                             <div class="container-fluid px-0">
-                              <form class="d-flex w-100 bg-secondary-subtle rounded" role="search">
-                                <input class="form-control me-2 bg-secondary-subtle m-0" type="search" placeholder="Search" aria-label="Search">
+                              <form class="d-flex w-100 bg-secondary-subtle rounded py-1" role="search">
+                                <input class="form-control bg-secondary-subtle" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
                               </form>
                             </div>
                         </nav>
@@ -50,8 +50,17 @@
                             </a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link">
-                                Disabled
+                                <div class="dropdown">
+                                    <a class="btn btn-secondary border-0 bg-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-bell" style="color: #ff8e00;"></i>
+                                    </a>
+                                  
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                      <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    </ul>
+                                </div>
                             </a>
                             </li>
                           </ul>
@@ -61,27 +70,26 @@
         </header>
 
         <main>
-
-            <div class="container-fluid d-flex ">
-                <div class="row w-100">
-                    <div class="col-auto d-flex flex-column justify-content-between">
+            <div class="container-fluid d-flex px-0">
+                <div class="row mx-0 w-100">
+                    <div class="col-auto aside d-flex flex-column justify-content-between py-4">
 
                         <nav>
                             <ul class="nav flex-column">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">
+                                    <a class="nav-link active text-white" aria-current="page" href="#">
                                         <i class="fa-solid fa-house" style="color: #ffffff;"></i>
                                         <span>Home</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">
+                                    <a class="nav-link text-white" href="#">
                                         <i class="fa-solid fa-chart-simple" style="color: #ffffff;"></i>
                                         <span>Stats</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">
+                                    <a class="nav-link text-white" href="#">
                                         <i class="fa-solid fa-signal" style="color: #ffffff;"></i>
                                         <span>Signals</span>
                                     </a>
@@ -91,30 +99,51 @@
 
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">
-                                    <i class="fa-solid fa-house" style="color: #ffffff;"></i>
-                                    <span>Home</span>
+                                <a class="nav-link active text-white" aria-current="page" href="#">
+                                    <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
+                                    <span>Admin</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="col">
-                        <div class="row top">
-                            <div class="col-6">
+                    <div class="col main-center">
+                        <div class="row bg-primary py-4">
+                            <div class="col-6 text-white">
+                                <h2 class="d-inline-block">
+                                    Boolean
+                                </h2>
 
+                                <span class="badge rounded-pill text-bg-dark">Piano Blaze</span>
+
+                                <div>
+                                    <span class="badge rounded-pill text-bg-dark">3 app</span>
+                                    <i class="fa-solid fa-angles-right" style="color: #ffffff;"></i>
+                                    <span class="badge rounded-pill text-bg-dark">Boolean mobile app</span>
+                                    <span class="badge rounded-pill text-bg-dark">Boolean web app</span>
+                                    <span class="badge rounded-pill text-bg-dark">Boolean blog app</span>
+                                </div>
                             </div>
 
-                            <div class="col-2">
+                            <div class="col-2 text-white">
+                                <small>
+                                    Studenti online negli ultimi 30 minuti
+                                </small>
 
+                                <div class="fs-2"> 
+                                    125
+                                </div>
                             </div>
 
-                            <div class="col-4">
-                                <span>
+                            <div class="col-4 text-white text-center">
+                                <span class="mx-2">
                                     Nuovo Studente
                                 </span>
 
-                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+                                <button class="btn btn-primary border py-0 px-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                    <span class="fs-5">
+                                        +
+                                    </span></button>
 
                                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                 <div class="offcanvas-header">
@@ -128,18 +157,20 @@
                             </div>
                         </div>
 
-                        <div class="row bottom">
+                        <div class="row bg-light pt-4">
                             <div class="col-8">
-                                <div class="card w-100">
+                                <div class="card w-100 pb-4">
                                     <div class="card-header">
-                                      Featured
+                                      <h2>
+                                        Prossime classi
+                                      </h2>
                                     </div>
-                                    <ul class="list-group d-flex list-group-flush">
+                                    <ul class="list-group d-flex list-group-flush list-unstyled px-2">
 
                                         <li class="list-group-item">
-                                            <div class="row">
+                                            <div class="row pt-2">
                                                 <div class="col">
-                                                    classe 75
+                                                    Nome
                                                 </div>
     
                                                 <div class="col-auto">
@@ -158,17 +189,17 @@
                                         </li>
 
                                         <li>
-                                            <a href="#" class="list-group-item list-group-item-action">
+                                            <a href="#" class="list-group-item list-group-item-action border-start-0 border-top-0 border-end-0">
                                                 <div class="row">
                                                     <div class="col">
                                                         classe 75
                                                     </div>
     
                                                     <div class="col-auto">
-                                                        Data inizio
+                                                        15 Feb 2021
                                                     </div>
                                                     <div class="col-auto">
-                                                        ROI
+                                                        20%
                                                     </div>
                                                     <div class="col-auto">
                                                         Stato
@@ -181,17 +212,17 @@
                                         </li>    
 
                                         <li>
-                                            <a href="#" class="list-group-item list-group-item-action">
+                                            <a href="#" class="list-group-item list-group-item-action border-start-0 border-top-0 border-end-0">
                                                 <div class="row">
                                                     <div class="col">
-                                                        classe 75
+                                                        classe 76
                                                     </div>
     
                                                     <div class="col-auto">
-                                                        Data inizio
+                                                        16 Feb 2021
                                                     </div>
                                                     <div class="col-auto">
-                                                        ROI
+                                                        20%
                                                     </div>
                                                     <div class="col-auto">
                                                         Stato
@@ -204,17 +235,17 @@
                                         </li>
 
                                         <li>
-                                            <a href="#" class="list-group-item list-group-item-action">
+                                            <a href="#" class="list-group-item list-group-item-action border-start-0 border-top-0 border-end-0">
                                                 <div class="row">
                                                     <div class="col">
-                                                        classe 75
+                                                        classe 77
                                                     </div>
     
                                                     <div class="col-auto">
-                                                        Data inizio
+                                                        17 Feb 2021
                                                     </div>
                                                     <div class="col-auto">
-                                                        ROI
+                                                        20%
                                                     </div>
                                                     <div class="col-auto">
                                                         Stato
@@ -227,17 +258,17 @@
                                         </li>
 
                                         <li>
-                                            <a href="#" class="list-group-item list-group-item-action">
+                                            <a href="#" class="list-group-item list-group-item-action border-start-0 border-top-0 border-end-0">
                                                 <div class="row">
                                                     <div class="col">
-                                                        classe 75
+                                                        classe 78
                                                     </div>
     
                                                     <div class="col-auto">
-                                                        Data inizio
+                                                        18 Feb 2021
                                                     </div>
                                                     <div class="col-auto">
-                                                        ROI
+                                                        20%
                                                     </div>
                                                     <div class="col-auto">
                                                         Stato
@@ -250,17 +281,17 @@
                                         </li>
 
                                         <li>
-                                            <a href="#" class="list-group-item list-group-item-action">
+                                            <a href="#" class="list-group-item list-group-item-action border-start-0 border-top-0 border-end-0">
                                                 <div class="row">
                                                     <div class="col">
-                                                        classe 75
+                                                        classe 79
                                                     </div>
     
                                                     <div class="col-auto">
-                                                        Data inizio
+                                                        19 Feb 2021
                                                     </div>
                                                     <div class="col-auto">
-                                                        ROI
+                                                        20%
                                                     </div>
                                                     <div class="col-auto">
                                                         Stato
@@ -273,17 +304,17 @@
                                         </li>
 
                                         <li>
-                                            <a href="#" class="list-group-item list-group-item-action">
+                                            <a href="#" class="list-group-item list-group-item-action border-start-0 border-top-0 border-end-0">
                                                 <div class="row">
                                                     <div class="col">
-                                                        classe 75
+                                                        classe 80
                                                     </div>
     
                                                     <div class="col-auto">
-                                                        Data inizio
+                                                        20 Feb 2021
                                                     </div>
                                                     <div class="col-auto">
-                                                        ROI
+                                                        20%
                                                     </div>
                                                     <div class="col-auto">
                                                         Stato
@@ -296,17 +327,17 @@
                                         </li>
 
                                         <li>
-                                            <a href="#" class="list-group-item list-group-item-action">
+                                            <a href="#" class="list-group-item list-group-item-action border-start-0 border-top-0 border-end-0">
                                                 <div class="row">
                                                     <div class="col">
-                                                        classe 75
+                                                        classe 81
                                                     </div>
     
                                                     <div class="col-auto">
-                                                        Data inizio
+                                                        21 Feb 2021
                                                     </div>
                                                     <div class="col-auto">
-                                                        ROI
+                                                        20%
                                                     </div>
                                                     <div class="col-auto">
                                                         Stato
@@ -319,17 +350,17 @@
                                         </li>
 
                                         <li>
-                                            <a href="#" class="list-group-item list-group-item-action">
+                                            <a href="#" class="list-group-item list-group-item-action border-start-0 border-top-0 border-end-0">
                                                 <div class="row">
                                                     <div class="col">
-                                                        classe 75
+                                                        classe 82
                                                     </div>
     
                                                     <div class="col-auto">
-                                                        Data inizio
+                                                       22 Feb 2021
                                                     </div>
                                                     <div class="col-auto">
-                                                        ROI
+                                                        20%
                                                     </div>
                                                     <div class="col-auto">
                                                         Stato
@@ -343,18 +374,20 @@
                                     </ul>
                                 </div>
 
-                                <div class="card w-100">
+                                <div class="card w-100 mt-4">
                                     <div class="card-header">
-                                      Featured
+                                      <h2>
+                                        F.A.Q.
+                                      </h2>
                                     </div>
-                                    <div class="accordion accordion-flush" id="accordionExample">
+                                    <div class="accordion accordion-flush px-2" id="accordionExample">
                                         <div class="accordion-item">
                                           <h2 class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                              Accordion Item #1
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                              Come aggiungere un nuovo studente?
                                             </button>
                                           </h2>
-                                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
                                               <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                                             </div>
@@ -363,7 +396,7 @@
                                         <div class="accordion-item">
                                           <h2 class="accordion-header">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                              Accordion Item #2
+                                              Come posso accedere alle informazioni del mio account?
                                             </button>
                                           </h2>
                                           <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -375,7 +408,7 @@
                                         <div class="accordion-item">
                                           <h2 class="accordion-header">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                              Accordion Item #3
+                                              Posso usare questa Dashboard da mobile?
                                             </button>
                                           </h2>
                                           <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -391,38 +424,39 @@
                             <div class="col-4">
                                 <div class="card w-100">
                                     <div class="card-header">
-                                      Featured
+                                      <h2>
+                                        Todo
+                                      </h2>
                                     </div>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">
+                                    <ul class="list-group list-group-flush p-3">
+                                        <li class="list-group-item border rounded-top">
                                           <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                                          <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+                                          <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
                                         </li>
-                                        <li class="list-group-item">
+                                        <li class="list-group-item border-start border-end">
                                           <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                                          <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+                                          <label class="form-check-label" for="secondCheckbox">Lezione su Bootstrap 5 in classe #75</label>
                                         </li>
-                                        <li class="list-group-item">
+                                        <li class="list-group-item border-start border-end border-bottom">
                                           <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                                          <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+                                          <label class="form-check-label" for="thirdCheckbox">Controllare username Github studenti</label>
                                         </li>
                                     </ul>
                                 </div>
 
-                                <div class="card w-100">
-                                    <img src="..." class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h5 class="card-title">Card title</h5>
-                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <div class="card w-100 mt-4 p-3">
+                                    <img src="img/stats.jpeg" class="card-img-top border" alt="...">
+                                    <div class="card-body border-start border-end">
+                                      <h5 class="card-title">Utenti attivi</h5>
+                                      <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
                                     </div>
                                     <ul class="list-group list-group-flush">
-                                      <li class="list-group-item">An item</li>
-                                      <li class="list-group-item">A second item</li>
-                                      <li class="list-group-item">A third item</li>
+                                      <li class="list-group-item border-start border-end">Gennaio: 1200</li>
+                                      <li class="list-group-item border-start border-end">Febbraio: 800</li>
+                                      <li class="list-group-item border-start border-end">Marzo: 1500</li>
                                     </ul>
-                                    <div class="card-body">
-                                      <a href="#" class="card-link">Card link</a>
-                                      <a href="#" class="card-link">Another link</a>
+                                    <div class="card-body border-start border-end border-bottom">
+                                      <a href="#" class="card-link">Visualizza report approfondito</a>
                                     </div>
                                 </div>
                             </div>

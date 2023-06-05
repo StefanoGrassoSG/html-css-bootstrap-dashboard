@@ -18,12 +18,11 @@
 }
 
 .debug main .container-fluid {
-    height: calc(100vh - 100px);
-    background-color: brown;
+    height: calc(100vh - 100px); brown
 }
 
 .debug main .row .col-auto {
-    background-color: red;
+    back
 }
 
 .debug main .row .col {
@@ -31,10 +30,9 @@
 }
 
 .debug main .row .col .row.top > * {
-    background-color: bisque;
-    height: 6.25rem;
-}
+    
+   
 
 .row.bottom {
-    background-color: red;
+    
 }

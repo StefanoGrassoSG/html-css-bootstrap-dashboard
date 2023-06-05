@@ -3,3 +3,29 @@
 ****************/
 
 @import "debug.css";
+
+/****************
+    MY-STYLE
+****************/
+
+/****************
+      GENERAL
+****************/
+
+header {
+      height: 5rem;
+}
+
+.col-auto.aside {
+      height: calc(100vh - 5rem);
+      background-image: url("../img/sidebar-bg.png");
+      background-size: cover;
+      background-color: #051E34;
+}
+
+.col.main-center {
+      height: calc(100vh - 5rem);
+      overflow: auto;
+}
+
+
