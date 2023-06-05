@@ -28,10 +28,14 @@
 }
 
 .debug main .row .col {
-    background-color: blue;
+    backg
 }
 
-.debug main .row .col .row > * {
+.debug main .row .col .row.top > * {
     background-color: bisque;
     height: 6.25rem;
+}
+
+.row.bottom {
+    background-color: red;
 }
