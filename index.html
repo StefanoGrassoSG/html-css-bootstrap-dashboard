@@ -15,7 +15,7 @@
     <body class="debug">
         
         <header class="bg-light d-flex align-items-center">
-            
+            <!--HEADER LOGO AND SEARCH-BAR-->
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-auto bg-white d-flex">
@@ -32,7 +32,7 @@
                             </div>
                         </nav>
                     </div>
-
+                    <!--HEADER SMALL-NAV-->
                     <div class="col-auto bg-white d-flex align-items-center">
                         <ul class="nav">
                             <li class="nav-item">
@@ -50,9 +50,10 @@
                                 <i class="fa-solid fa-ellipsis-vertical" style="color: #6b6b6b;"></i>
                             </a>
                             </li>
+                            <!--DROPDOWN-MENU-SMALL-NAV-->
                             <li class="nav-item">
                                 <div class="dropdown">
-                                    <a class="btn btn-secondary border-0 bg-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="btn border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa-solid fa-bell" style="color: #ff8e00;"></i>
                                     </a>
                                   
@@ -71,28 +72,29 @@
         </header>
 
         <main>
+            <!--MAIN-CONTAINER-->
             <div class="container-fluid d-flex px-0">
                 <div class="row mx-0 w-100">
+                    <!--ASIDE-LEFT-COLUMN-->
                     <div class="col-auto aside d-flex flex-column justify-content-between py-4">
-
                         <nav>
                             <ul class="nav flex-column">
                                 <li class="nav-item">
                                     <a class="nav-link active text-white" aria-current="page" href="#">
                                         <i class="fa-solid fa-house" style="color: #ffffff;"></i>
-                                        <span class="d-none d-lg-block">Home</span>
+                                        <span class="d-none d-lg-inline-block">Home</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-white" href="#">
                                         <i class="fa-solid fa-chart-simple" style="color: #ffffff;"></i>
-                                        <span class="d-none d-lg-block">Stats</span>
+                                        <span class="d-none d-lg-inline-block">Stats</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-white" href="#">
                                         <i class="fa-solid fa-signal" style="color: #ffffff;"></i>
-                                        <span class="d-none d-lg-block">Signals</span>
+                                        <span class="d-none d-lg-inline-block">Signals</span>
                                     </a>
                                 </li>
                             </ul>
@@ -102,12 +104,12 @@
                             <li class="nav-item">
                                 <a class="nav-link active text-white" aria-current="page" href="#">
                                     <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
-                                    <span class="d-none d-lg-block">Admin</span>
+                                    <span class="d-none d-lg-inline-block">Admin</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
-
+                    <!--MAIN-TOP-SECTION-->
                     <div class="col main-center overflow-y-auto">
                         <div class="row bg-primary py-4">
                             <div class="col-12 col-md col-lg-7 text-white order-2 order-md-0 py-3 py-md-0">
@@ -146,7 +148,7 @@
                                     <span class="fs-5">
                                         +
                                     </span></button>
-
+                                <!--OFFCANVAS-->
                                 <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                 <div class="offcanvas-header">
                                     <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
@@ -241,7 +243,7 @@
                             </div>
                             </div>
                         </div>
-
+                        <!--MAIN-SECTION-TABLE-->
                         <div class="row bg-light pt-4">
                             <div class="col-lg-8">
                                 <div class="card w-100 pb-4">
@@ -254,7 +256,7 @@
                                         <thead>
                                           <tr>
                                             <th class="w-50" scope="col">Nome</th>
-                                            <th class="w-auto text-center d-none d-md-table-cell" scope="col">Data Inizio</th>
+                                            <th class="w-auto text-center d-none d-xl-table-cell" scope="col">Data Inizio</th>
                                             <th class="w-auto text-center d-none d-md-table-cell" scope="col">ROI</th>
                                             <th class="w-auto text-center" scope="col">Stato</th>
                                             <th class="w-auto text-center" scope="col">Azioni</th>
@@ -263,80 +265,80 @@
                                         <tbody>
                                           <tr>
                                             <th scope="row"><img class="logo-class" src="img/class-avatar-removebg-preview.png" alt=""> Classe 75</th>
-                                            <td class="w-auto text-center">15 feb 2021</td>
-                                            <td class="w-auto text-center">20%</td>
-                                            <td class="w-auto text-center d-none d-md-table-cell"><span class="badge text-bg-success">Done</span></td>
-                                            <td class="w-auto text-center d-none d-md-table-cell">
+                                            <td class="w-auto text-center d-none d-xl-table-cell">15 feb 2021</td>
+                                            <td class="w-auto text-center  d-none d-md-table-cell">20%</td>
+                                            <td class="w-auto text-center"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="w-auto text-center">
                                                 <button type="button" class=" btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: #7e7f81;"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: #7e7f81;"></i></button>
                                             </td>
                                           </tr>
                                           <tr>
                                             <th scope="row"><img class="logo-class" src="img/class-avatar-removebg-preview.png" alt=""> Classe 76</th>
-                                            <td class="w-auto text-center">16 feb 2021</td>
-                                            <td class="w-auto text-center">20%</td>
-                                            <td class="w-auto text-center d-none d-md-table-cell"><span class="badge text-bg-success">Done</span></td>
-                                            <td class="w-auto text-center d-none d-md-table-cell">
+                                            <td class="w-auto text-center d-none d-xl-table-cell">16 feb 2021</td>
+                                            <td class="w-auto text-center d-none d-md-table-cell">20%</td>
+                                            <td class="w-auto text-center"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="w-auto text-center">
                                                 <button type="button" class=" btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: #7e7f81;"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: #7e7f81;"></i></button>
                                             </td>
                                           </tr>
                                           <tr>
                                             <th scope="row"><img class="logo-class" src="img/class-avatar-removebg-preview.png" alt=""> Classe 77</th>
-                                            <td class="w-auto text-center">17 feb 2021</td>
-                                            <td class="w-auto text-center">20%</td>
-                                            <td class="w-auto text-center d-none d-md-table-cell"><span class="badge text-white text-bg-warning">process</span></td>
-                                            <td class="w-auto text-center d-none d-md-table-cell">
+                                            <td class="w-auto text-center d-none d-xl-table-cell">17 feb 2021</td>
+                                            <td class="w-auto text-center d-none d-md-table-cell">20%</td>
+                                            <td class="w-auto text-center"><span class="badge text-white text-bg-warning">process</span></td>
+                                            <td class="w-auto text-center">
                                                 <button type="button" class=" btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: #7e7f81;"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: #7e7f81;"></i></button>
                                             </td>
                                           </tr>
                                           <tr>
                                             <th scope="row"><img class="logo-class" src="img/class-avatar-removebg-preview.png" alt=""> Classe 78</th>
-                                            <td class="w-auto text-center">18 feb 2021</td>
-                                            <td class="w-auto text-center">20%</td>
-                                            <td class="w-auto text-center d-none d-md-table-cell"><span class="badge text-bg-success">Done</span></td>
-                                            <td class="w-auto text-center d-none d-md-table-cell">
+                                            <td class="w-auto text-center d-none d-xl-table-cell">18 feb 2021</td>
+                                            <td class="w-auto text-center d-none d-md-table-cell">20%</td>
+                                            <td class="w-auto text-center"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="w-auto text-center">
                                                 <button type="button" class=" btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: #7e7f81;"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: #7e7f81;"></i></button>
                                             </td>
                                           </tr>
                                           <tr>
                                             <th scope="row"><img class="logo-class" src="img/class-avatar-removebg-preview.png" alt=""> Classe 79</th>
-                                            <td class="w-auto text-center">19 feb 2021</td>
-                                            <td class="w-auto text-center">20%</td>
-                                            <td class="w-auto text-center d-none d-md-table-cell"><span class="badge text-bg-danger">failed</span></td>
-                                            <td class="w-auto text-center d-none d-md-table-cell">
+                                            <td class="w-auto text-center d-none d-xl-table-cell">19 feb 2021</td>
+                                            <td class="w-auto text-center d-none d-md-table-cell">20%</td>
+                                            <td class="w-auto text-center"><span class="badge text-bg-danger">failed</span></td>
+                                            <td class="w-auto text-center">
                                                 <button type="button" class=" btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: #7e7f81;"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: #7e7f81;"></i></button>
                                             </td>
                                           </tr>
                                           <tr>
                                             <th scope="row"><img class="logo-class" src="img/class-avatar-removebg-preview.png" alt=""> Classe 80</th>
-                                            <td class="w-auto text-center">20 feb 2021</td>
-                                            <td class="w-auto text-center">20%</td>
-                                            <td class="w-auto text-center d-none d-md-table-cell"><span class="badge text-bg-success">Done</span></td>
-                                            <td class="w-auto text-center d-none d-md-table-cell">
+                                            <td class="w-auto text-center d-none d-xl-table-cell">20 feb 2021</td>
+                                            <td class="w-auto text-center d-none d-md-table-cell">20%</td>
+                                            <td class="w-auto text-center"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="w-auto text-center">
                                                 <button type="button" class=" btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: #7e7f81;"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: #7e7f81;"></i></button>
                                             </td>
                                           </tr>
                                           <tr>
                                             <th scope="row"><img class="logo-class" src="img/class-avatar-removebg-preview.png" alt=""> Classe 81</th>
-                                            <td class="w-auto text-center">21 feb 2021</td>
-                                            <td class="w-auto text-center">20%</td>
-                                            <td class="w-auto text-center d-none d-md-table-cell"><span class="badge text-bg-danger">failed</span></td>
-                                            <td class="w-auto text-center d-none d-md-table-cell">
+                                            <td class="w-auto text-center d-none d-xl-table-cell">21 feb 2021</td>
+                                            <td class="w-auto text-center d-none d-md-table-cell">20%</td>
+                                            <td class="w-auto text-center"><span class="badge text-bg-danger">failed</span></td>
+                                            <td class="w-auto text-center">
                                                 <button type="button" class=" btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: #7e7f81;"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: #7e7f81;"></i></button>
                                             </td>
                                           </tr>
                                           <tr>
                                             <th scope="row"><img class="logo-class" src="img/class-avatar-removebg-preview.png" alt=""> Classe 82</th>
-                                            <td class="w-auto text-center">22 feb 2021</td>
-                                            <td class="w-auto text-center">20%</td>
-                                            <td class="w-auto text-center d-none d-md-table-cell"><span class="badge text-bg-success">Done</span></td>
-                                            <td class="w-auto text-center d-none d-md-table-cell">
+                                            <td class="w-auto text-center d-none d-xl-table-cell">22 feb 2021</td>
+                                            <td class="w-auto text-center d-none d-md-table-cell">20%</td>
+                                            <td class="w-auto text-center"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="w-auto text-center">
                                                 <button type="button" class=" btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: #7e7f81;"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: #7e7f81;"></i></button>
                                             </td>
@@ -344,7 +346,7 @@
                                         </tbody>
                                       </table>
                                 </div>
-
+                                <!--MAIN-SECTION-FAQ-->
                                 <div class="card w-100 mt-4">
                                     <div class="card-header">
                                       <h2>
@@ -391,7 +393,7 @@
                                       </div>
                                 </div>
                             </div>
-
+                            <!--MAIN-SECTION-TODO-CARD-->
                             <div class="col-lg-4">
                                 <div class="card w-100 mt-4 mt-lg-0">
                                     <div class="card-header">
@@ -414,7 +416,7 @@
                                         </li>
                                     </ul>
                                 </div>
-
+                                <!--MAIN-SECTION-STATS-CARD-->
                                 <div class="card w-100 mt-4 p-3">
                                     <img src="img/stats.jpeg" class="card-img-top border" alt="...">
                                     <div class="card-body border-start border-end">
