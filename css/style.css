@@ -1,10 +1,4 @@
 /****************
-      IMPORTS
-****************/
-
-@import "debug.css";
-
-/****************
     MY-STYLE
 ****************/
 
@@ -25,7 +19,14 @@ header {
 
 .col.main-center {
       height: calc(100vh - 5rem);
-      overflow: auto;
+}
+
+.logo-mobile {
+      width: 2.5rem;
+}
+
+.logo-class {
+      width: 1.875rem;
 }
 
 

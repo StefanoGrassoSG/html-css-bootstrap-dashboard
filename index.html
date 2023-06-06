@@ -14,12 +14,13 @@
     </head>
     <body class="debug">
         
-        <header class="bg-light py-3">
+        <header class="bg-light d-flex align-items-center">
             
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-auto bg-white d-flex">
-                        <img src="img/logo.svg" alt="">
+                        <img class="d-none d-lg-block" src="img/logo.svg" alt="">
+                        <img class="d-lg-none logo-mobile img-fluid" src="img/mobile-logo.png" alt="">
                     </div>
 
                     <div class="col p-0">
@@ -32,20 +33,20 @@
                         </nav>
                     </div>
 
-                    <div class="col-auto bg-white">
+                    <div class="col-auto bg-white d-flex align-items-center">
                         <ul class="nav">
                             <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="#">
+                              <a class="nav-link active d-none d-lg-block" aria-current="page" href="#">
                                 <i class="fa-solid fa-bars" style="color: #6b6b6b;"></i>
                             </a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">
+                              <a class="nav-link d-none d-lg-block" href="#">
                                 <i class="fa-solid fa-circle-question" style="color: #6b6b6b;"></i>
                             </a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">
+                              <a class="nav-link d-none d-lg-block" href="#">
                                 <i class="fa-solid fa-ellipsis-vertical" style="color: #6b6b6b;"></i>
                             </a>
                             </li>
@@ -79,19 +80,19 @@
                                 <li class="nav-item">
                                     <a class="nav-link active text-white" aria-current="page" href="#">
                                         <i class="fa-solid fa-house" style="color: #ffffff;"></i>
-                                        <span>Home</span>
+                                        <span class="d-none d-lg-block">Home</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-white" href="#">
                                         <i class="fa-solid fa-chart-simple" style="color: #ffffff;"></i>
-                                        <span>Stats</span>
+                                        <span class="d-none d-lg-block">Stats</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-white" href="#">
                                         <i class="fa-solid fa-signal" style="color: #ffffff;"></i>
-                                        <span>Signals</span>
+                                        <span class="d-none d-lg-block">Signals</span>
                                     </a>
                                 </li>
                             </ul>
@@ -101,15 +102,15 @@
                             <li class="nav-item">
                                 <a class="nav-link active text-white" aria-current="page" href="#">
                                     <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
-                                    <span>Admin</span>
+                                    <span class="d-none d-lg-block">Admin</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="col main-center">
+                    <div class="col main-center overflow-y-auto">
                         <div class="row bg-primary py-4">
-                            <div class="col-6 text-white">
+                            <div class="col-12 col-md col-lg-7 text-white order-2 order-md-0 py-3 py-md-0">
                                 <h2 class="d-inline-block">
                                     Boolean
                                 </h2>
@@ -119,13 +120,14 @@
                                 <div>
                                     <span class="badge rounded-pill text-bg-dark">3 app</span>
                                     <i class="fa-solid fa-angles-right" style="color: #ffffff;"></i>
-                                    <span class="badge rounded-pill text-bg-dark">Boolean mobile app</span>
-                                    <span class="badge rounded-pill text-bg-dark">Boolean web app</span>
-                                    <span class="badge rounded-pill text-bg-dark">Boolean blog app</span>
+                                    <span class="badge rounded-pill text-bg-dark d-lg-none">+</span>
+                                    <span class="badge rounded-pill text-bg-dark d-none d-lg-inline">Boolean mobile app</span>
+                                    <span class="badge rounded-pill text-bg-dark d-none d-lg-inline">Boolean web app</span>
+                                    <span class="badge rounded-pill text-bg-dark d-none d-lg-inline">Boolean blog app</span>
                                 </div>
                             </div>
 
-                            <div class="col-2 text-white">
+                            <div class="col-12 col-md col-lg-3 text-white order-3 order-md-0">
                                 <small>
                                     Studenti online negli ultimi 30 minuti
                                 </small>
@@ -135,8 +137,8 @@
                                 </div>
                             </div>
 
-                            <div class="col-4 text-white text-center">
-                                <span class="mx-2">
+                            <div class="col-12 col-md col-lg-2 text-white order-1">
+                                <span>
                                     Nuovo Studente
                                 </span>
 
@@ -158,220 +160,106 @@
                         </div>
 
                         <div class="row bg-light pt-4">
-                            <div class="col-8">
+                            <div class="col-lg-8">
                                 <div class="card w-100 pb-4">
                                     <div class="card-header">
                                       <h2>
                                         Prossime classi
                                       </h2>
                                     </div>
-                                    <ul class="list-group d-flex list-group-flush list-unstyled px-2">
-
-                                        <li class="list-group-item">
-                                            <div class="row pt-2">
-                                                <div class="col">
-                                                    Nome
-                                                </div>
-    
-                                                <div class="col-auto">
-                                                    Data inizio
-                                                </div>
-                                                <div class="col-auto">
-                                                    ROI
-                                                </div>
-                                                <div class="col-auto">
-                                                    Stato
-                                                </div>
-                                                <div class="col-auto">
-                                                    Azioni
-                                                </div>
-                                            </div> 
-                                        </li>
-
-                                        <li>
-                                            <a href="#" class="list-group-item list-group-item-action border-start-0 border-top-0 border-end-0">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        classe 75
-                                                    </div>
-    
-                                                    <div class="col-auto">
-                                                        15 Feb 2021
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        20%
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        Stato
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        Azioni
-                                                    </div>
-                                                </div>  
-                                            </a>
-                                        </li>    
-
-                                        <li>
-                                            <a href="#" class="list-group-item list-group-item-action border-start-0 border-top-0 border-end-0">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        classe 76
-                                                    </div>
-    
-                                                    <div class="col-auto">
-                                                        16 Feb 2021
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        20%
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        Stato
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        Azioni
-                                                    </div>
-                                                </div>  
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#" class="list-group-item list-group-item-action border-start-0 border-top-0 border-end-0">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        classe 77
-                                                    </div>
-    
-                                                    <div class="col-auto">
-                                                        17 Feb 2021
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        20%
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        Stato
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        Azioni
-                                                    </div>
-                                                </div>  
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#" class="list-group-item list-group-item-action border-start-0 border-top-0 border-end-0">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        classe 78
-                                                    </div>
-    
-                                                    <div class="col-auto">
-                                                        18 Feb 2021
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        20%
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        Stato
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        Azioni
-                                                    </div>
-                                                </div>  
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#" class="list-group-item list-group-item-action border-start-0 border-top-0 border-end-0">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        classe 79
-                                                    </div>
-    
-                                                    <div class="col-auto">
-                                                        19 Feb 2021
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        20%
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        Stato
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        Azioni
-                                                    </div>
-                                                </div>  
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#" class="list-group-item list-group-item-action border-start-0 border-top-0 border-end-0">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        classe 80
-                                                    </div>
-    
-                                                    <div class="col-auto">
-                                                        20 Feb 2021
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        20%
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        Stato
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        Azioni
-                                                    </div>
-                                                </div>  
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#" class="list-group-item list-group-item-action border-start-0 border-top-0 border-end-0">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        classe 81
-                                                    </div>
-    
-                                                    <div class="col-auto">
-                                                        21 Feb 2021
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        20%
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        Stato
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        Azioni
-                                                    </div>
-                                                </div>  
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#" class="list-group-item list-group-item-action border-start-0 border-top-0 border-end-0">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        classe 82
-                                                    </div>
-    
-                                                    <div class="col-auto">
-                                                       22 Feb 2021
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        20%
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        Stato
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        Azioni
-                                                    </div>
-                                                </div>  
-                                            </a>
-                                        </li>
-                                    </ul>
+                                    <table class="table table-hover">
+                                        <thead>
+                                          <tr>
+                                            <th class="w-50" scope="col">Nome</th>
+                                            <th class="w-auto text-center" scope="col">Data Inizio</th>
+                                            <th class="w-auto text-center" scope="col">ROI</th>
+                                            <th class="w-auto text-center" scope="col">Stato</th>
+                                            <th class="w-auto text-center" scope="col">Azioni</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row"><img class="logo-class" src="img/class-avatar-removebg-preview.png" alt=""> Classe 75</th>
+                                            <td class="w-auto text-center">15 feb 2021</td>
+                                            <td class="w-auto text-center">20%</td>
+                                            <td class="w-auto text-center"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="w-auto text-center">
+                                                <button type="button" class=" btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: #7e7f81;"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: #7e7f81;"></i></button>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"><img class="logo-class" src="img/class-avatar-removebg-preview.png" alt=""> Classe 76</th>
+                                            <td class="w-auto text-center">16 feb 2021</td>
+                                            <td class="w-auto text-center">20%</td>
+                                            <td class="w-auto text-center"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="w-auto text-center">
+                                                <button type="button" class=" btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: #7e7f81;"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: #7e7f81;"></i></button>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"><img class="logo-class" src="img/class-avatar-removebg-preview.png" alt=""> Classe 77</th>
+                                            <td class="w-auto text-center">17 feb 2021</td>
+                                            <td class="w-auto text-center">20%</td>
+                                            <td class="w-auto text-center"><span class="badge text-white text-bg-warning">process</span></td>
+                                            <td class="w-auto text-center">
+                                                <button type="button" class=" btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: #7e7f81;"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: #7e7f81;"></i></button>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"><img class="logo-class" src="img/class-avatar-removebg-preview.png" alt=""> Classe 78</th>
+                                            <td class="w-auto text-center">18 feb 2021</td>
+                                            <td class="w-auto text-center">20%</td>
+                                            <td class="w-auto text-center"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="w-auto text-center">
+                                                <button type="button" class=" btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: #7e7f81;"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: #7e7f81;"></i></button>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"><img class="logo-class" src="img/class-avatar-removebg-preview.png" alt=""> Classe 79</th>
+                                            <td class="w-auto text-center">19 feb 2021</td>
+                                            <td class="w-auto text-center">20%</td>
+                                            <td class="w-auto text-center"><span class="badge text-bg-danger">failed</span></td>
+                                            <td class="w-auto text-center">
+                                                <button type="button" class=" btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: #7e7f81;"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: #7e7f81;"></i></button>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"><img class="logo-class" src="img/class-avatar-removebg-preview.png" alt=""> Classe 80</th>
+                                            <td class="w-auto text-center">20 feb 2021</td>
+                                            <td class="w-auto text-center">20%</td>
+                                            <td class="w-auto text-center"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="w-auto text-center">
+                                                <button type="button" class=" btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: #7e7f81;"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: #7e7f81;"></i></button>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"><img class="logo-class" src="img/class-avatar-removebg-preview.png" alt=""> Classe 81</th>
+                                            <td class="w-auto text-center">21 feb 2021</td>
+                                            <td class="w-auto text-center">20%</td>
+                                            <td class="w-auto text-center"><span class="badge text-bg-danger">failed</span></td>
+                                            <td class="w-auto text-center">
+                                                <button type="button" class=" btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: #7e7f81;"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: #7e7f81;"></i></button>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"><img class="logo-class" src="img/class-avatar-removebg-preview.png" alt=""> Classe 82</th>
+                                            <td class="w-auto text-center">22 feb 2021</td>
+                                            <td class="w-auto text-center">20%</td>
+                                            <td class="w-auto text-center"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="w-auto text-center">
+                                                <button type="button" class=" btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: #7e7f81;"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: #7e7f81;"></i></button>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
                                 </div>
 
                                 <div class="card w-100 mt-4">
@@ -421,8 +309,8 @@
                                 </div>
                             </div>
 
-                            <div class="col-4">
-                                <div class="card w-100">
+                            <div class="col-lg-4">
+                                <div class="card w-100 mt-4 mt-lg-0">
                                     <div class="card-header">
                                       <h2>
                                         Todo
