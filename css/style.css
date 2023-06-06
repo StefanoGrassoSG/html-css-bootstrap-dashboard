@@ -30,3 +30,22 @@ header {
 }
 
 
+/***************
+OFF-CANVAS-FORM
+****************/
+
+.offcanvas-body .row > * ,.offcanvas-body .form-check {
+      margin-bottom: 1.25rem;
+}
+
+/*****************
+ OFF-CANVAS-QUERY
+******************/
+
+@media screen and (min-width: 992px) {
+
+      .offcanvas {
+            width: 50%!important;
+      }
+}
+
