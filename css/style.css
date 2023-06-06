@@ -47,7 +47,7 @@ header ul li:hover {
    HOVER-ASIDE-COL
 *******************/
 
-main ul li:hover {
+main .col-auto.aside ul li:hover {
       background-color: rgba(0, 0, 0, 0.5);
       border-radius: .3125rem;
 }
