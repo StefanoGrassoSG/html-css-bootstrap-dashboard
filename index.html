@@ -147,15 +147,98 @@
                                         +
                                     </span></button>
 
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                 <div class="offcanvas-header">
                                     <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
                                 <div class="offcanvas-body">
-                                    ...
+                                    <form>
+                                        <div class="row g-3">
+                                            <div class="col">
+                                                <label for="inputname" class="form-label"><span class="fw-semibold">Name</span></label>
+                                                <input type="text" class="form-control" placeholder="Nome" id="inputname" aria-label="Nome">
+                                            </div>
+                                            <div class="col">
+                                                <label for="inputlastname" class="form-label"><span class="fw-semibold">Cognome</span></label>
+                                                <input type="text" class="form-control" placeholder="Cognome" id="inputlastname" aria-label="Cognome">
+                                            </div>
+                                        </div>
+    
+                                        <div class="row g-3">
+                                            <div class="col">
+                                                <label class="form-label" for="autoSizingInputGroup">Username</label>
+                                                <div class="input-group">
+                                                    <div class="input-group-text">@</div>
+                                                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <label for="inputlastname" class="form-label"><span class="fw-semibold">Cognome</span></label>
+                                                <input type="text" class="form-control" placeholder="Cognome" id="inputlastname" aria-label="Cognome">
+                                            </div>
+                                        </div>
+    
+                                        <div class="row g-3">
+                                            <div class="col">
+                                                <label class="form-label" for="autoSizingInputGroup">Username</label>
+                                                <div class="input-group">
+                                                    <div class="input-group-text">@</div>
+                                                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <label for="inputlastname" class="form-label"><span class="fw-semibold">Cognome</span></label>
+                                                <input type="text" class="form-control" placeholder="Cognome" id="inputlastname" aria-label="Cognome">
+                                            </div>
+                                        </div>
+    
+                                        <div class="row g-3">
+                                            <div class="col">
+                                                <label for="inputname" class="form-label"><span class="fw-semibold">Name</span></label>
+                                                <input type="text" class="form-control" placeholder="Nome" id="inputname" aria-label="Nome">
+                                            </div>
+                                        </div>
+    
+                                        <div class="row g-3">
+                                            <div class="col-6">
+                                                <label for="inputname" class="form-label"><span class="fw-semibold">Name</span></label>
+                                                <input type="text" class="form-control" placeholder="Nome" id="inputname" aria-label="Nome">
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="inputlastname" class="form-label"><span class="fw-semibold">Cognome</span></label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Open this select menu</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-2">
+                                                <label for="inputlastname" class="form-label"><span class="fw-semibold">Cognome</span></label>
+                                                <input type="text" class="form-control" placeholder="Cognome" id="inputlastname" aria-label="Cognome">
+                                            </div>
+                                        </div>
+    
+                                        <div class="row g-3">
+                                            <div class="col">
+                                                <label for="formFile" class="form-label">Default file input example</label>
+                                                <input class="form-control" type="file" id="formFile">
+                                            </div>
+                                        </div>
+    
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                              Default checkbox
+                                            </label>
+                                        </div>
+    
+                                        <button class="btn btn-primary" type="submit">Submit form</button>
+                                        <button class="btn btn-primary" type="reset">Clear</button>
+                                    </form>
                                 </div>
-                                </div>
+                            </div>
                             </div>
                         </div>
 
@@ -171,8 +254,8 @@
                                         <thead>
                                           <tr>
                                             <th class="w-50" scope="col">Nome</th>
-                                            <th class="w-auto text-center" scope="col">Data Inizio</th>
-                                            <th class="w-auto text-center" scope="col">ROI</th>
+                                            <th class="w-auto text-center d-none d-md-table-cell" scope="col">Data Inizio</th>
+                                            <th class="w-auto text-center d-none d-md-table-cell" scope="col">ROI</th>
                                             <th class="w-auto text-center" scope="col">Stato</th>
                                             <th class="w-auto text-center" scope="col">Azioni</th>
                                           </tr>
@@ -182,8 +265,8 @@
                                             <th scope="row"><img class="logo-class" src="img/class-avatar-removebg-preview.png" alt=""> Classe 75</th>
                                             <td class="w-auto text-center">15 feb 2021</td>
                                             <td class="w-auto text-center">20%</td>
-                                            <td class="w-auto text-center"><span class="badge text-bg-success">Done</span></td>
-                                            <td class="w-auto text-center">
+                                            <td class="w-auto text-center d-none d-md-table-cell"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="w-auto text-center d-none d-md-table-cell">
                                                 <button type="button" class=" btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: #7e7f81;"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: #7e7f81;"></i></button>
                                             </td>
@@ -192,8 +275,8 @@
                                             <th scope="row"><img class="logo-class" src="img/class-avatar-removebg-preview.png" alt=""> Classe 76</th>
                                             <td class="w-auto text-center">16 feb 2021</td>
                                             <td class="w-auto text-center">20%</td>
-                                            <td class="w-auto text-center"><span class="badge text-bg-success">Done</span></td>
-                                            <td class="w-auto text-center">
+                                            <td class="w-auto text-center d-none d-md-table-cell"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="w-auto text-center d-none d-md-table-cell">
                                                 <button type="button" class=" btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: #7e7f81;"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: #7e7f81;"></i></button>
                                             </td>
@@ -202,8 +285,8 @@
                                             <th scope="row"><img class="logo-class" src="img/class-avatar-removebg-preview.png" alt=""> Classe 77</th>
                                             <td class="w-auto text-center">17 feb 2021</td>
                                             <td class="w-auto text-center">20%</td>
-                                            <td class="w-auto text-center"><span class="badge text-white text-bg-warning">process</span></td>
-                                            <td class="w-auto text-center">
+                                            <td class="w-auto text-center d-none d-md-table-cell"><span class="badge text-white text-bg-warning">process</span></td>
+                                            <td class="w-auto text-center d-none d-md-table-cell">
                                                 <button type="button" class=" btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: #7e7f81;"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: #7e7f81;"></i></button>
                                             </td>
@@ -212,8 +295,8 @@
                                             <th scope="row"><img class="logo-class" src="img/class-avatar-removebg-preview.png" alt=""> Classe 78</th>
                                             <td class="w-auto text-center">18 feb 2021</td>
                                             <td class="w-auto text-center">20%</td>
-                                            <td class="w-auto text-center"><span class="badge text-bg-success">Done</span></td>
-                                            <td class="w-auto text-center">
+                                            <td class="w-auto text-center d-none d-md-table-cell"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="w-auto text-center d-none d-md-table-cell">
                                                 <button type="button" class=" btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: #7e7f81;"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: #7e7f81;"></i></button>
                                             </td>
@@ -222,8 +305,8 @@
                                             <th scope="row"><img class="logo-class" src="img/class-avatar-removebg-preview.png" alt=""> Classe 79</th>
                                             <td class="w-auto text-center">19 feb 2021</td>
                                             <td class="w-auto text-center">20%</td>
-                                            <td class="w-auto text-center"><span class="badge text-bg-danger">failed</span></td>
-                                            <td class="w-auto text-center">
+                                            <td class="w-auto text-center d-none d-md-table-cell"><span class="badge text-bg-danger">failed</span></td>
+                                            <td class="w-auto text-center d-none d-md-table-cell">
                                                 <button type="button" class=" btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: #7e7f81;"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: #7e7f81;"></i></button>
                                             </td>
@@ -232,8 +315,8 @@
                                             <th scope="row"><img class="logo-class" src="img/class-avatar-removebg-preview.png" alt=""> Classe 80</th>
                                             <td class="w-auto text-center">20 feb 2021</td>
                                             <td class="w-auto text-center">20%</td>
-                                            <td class="w-auto text-center"><span class="badge text-bg-success">Done</span></td>
-                                            <td class="w-auto text-center">
+                                            <td class="w-auto text-center d-none d-md-table-cell"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="w-auto text-center d-none d-md-table-cell">
                                                 <button type="button" class=" btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: #7e7f81;"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: #7e7f81;"></i></button>
                                             </td>
@@ -242,8 +325,8 @@
                                             <th scope="row"><img class="logo-class" src="img/class-avatar-removebg-preview.png" alt=""> Classe 81</th>
                                             <td class="w-auto text-center">21 feb 2021</td>
                                             <td class="w-auto text-center">20%</td>
-                                            <td class="w-auto text-center"><span class="badge text-bg-danger">failed</span></td>
-                                            <td class="w-auto text-center">
+                                            <td class="w-auto text-center d-none d-md-table-cell"><span class="badge text-bg-danger">failed</span></td>
+                                            <td class="w-auto text-center d-none d-md-table-cell">
                                                 <button type="button" class=" btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: #7e7f81;"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: #7e7f81;"></i></button>
                                             </td>
@@ -252,8 +335,8 @@
                                             <th scope="row"><img class="logo-class" src="img/class-avatar-removebg-preview.png" alt=""> Classe 82</th>
                                             <td class="w-auto text-center">22 feb 2021</td>
                                             <td class="w-auto text-center">20%</td>
-                                            <td class="w-auto text-center"><span class="badge text-bg-success">Done</span></td>
-                                            <td class="w-auto text-center">
+                                            <td class="w-auto text-center d-none d-md-table-cell"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="w-auto text-center d-none d-md-table-cell">
                                                 <button type="button" class=" btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: #7e7f81;"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: #7e7f81;"></i></button>
                                             </td>
