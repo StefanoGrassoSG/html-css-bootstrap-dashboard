@@ -35,6 +35,10 @@ header {
       display: inline-block;
 }
 
+table td {
+      width: 100px;
+}
+
 /*****************
    HOVER-HEADER
 *****************/
